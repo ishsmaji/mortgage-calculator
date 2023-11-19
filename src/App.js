@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Container, Grid } from "@mui/material";
+import Navbar from "./components/Navbar";
+import Result from "./components/Result";
+import Sliderselect from "./components/Sliderselect";
+import Tenurselect from "./components/Tenurselect";
 
 function App() {
+
+  const[data,setData]=useState({
+    homeValue:3000,
+    downPayment:3000 * 0.2,
+    loanAmount:3000 * 0.8,
+    loanTerm:5,
+    interestRate:5,
+  });
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      
+      <Container maxwidth="xl" sx={{mt: 2}}>
+      <Grid container spacing={4}>
+      <Grid item xs={12} md={6}>
+      <Sliderselect data={data} setData={setData}/>
+      <Tenurselect data={data} setData={setData}/>
+      </Grid>
+      <Grid item xs={12}  md={6}>
+      <Result data={data}/>
+       </Grid>
+      </Grid>
+      </Container>
     </div>
   );
 }
