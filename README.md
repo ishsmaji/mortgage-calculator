@@ -1,4 +1,10 @@
+
+
 # Getting Started with Create React App
+
+## Live Link
+
+To see the live version of this project, click [here](https://ishsmaji.github.io/mortgage-calculator/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,9 +45,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Live Link
 
-To see the live version of this project, click [here](https://ishsmaji.github.io/mortgage-calculator/).
 
 ## Learn More
 
